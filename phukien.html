@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phụ kiện - Minh Nhật Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Thanh trên cùng -->
+    <div class="topbar">
+      <div class="logo">
+        <img
+          src="./anh/481780866_122093212556802956_3033451504716178783_n.jpg"
+          alt="Logo"
+        />
+        <span>MINH NHẬT STORE</span>
+      </div>
+
+      <div class="location">
+        <label for="city-select">Xem giá, tồn kho tại:</label>
+        <select id="city-select">
+          <option>Huế</option>
+          <option>Chưa cập nhật</option>
+        </select>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm sản phẩm ..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="user-buttons">
+        <button class="login-btn"><i class="fas fa-user"></i> Đăng nhập</button>
+        <button class="register-btn">
+          <i class="fas fa-user-plus"></i> Đăng ký
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu điều hướng chính -->
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i> Trang chủ</a>
+        </li>
+        <li>
+          <a href="dienthoai.html"
+            ><i class="fas fa-mobile-alt"></i> Điện thoại</a
+          >
+        </li>
+        <li>
+          <a href="phukien.html"
+            ><i class="fas fa-headphones-alt"></i> Phụ kiện</a
+          >
+        </li>
+        <li>
+          <a href="suachua.html"><i class="fas fa-tools"></i> Sửa chữa</a>
+        </li>
+        <li>
+          <a href="tintuc.html"><i class="fas fa-newspaper"></i> Tin tức</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <!-- <section class="banner">
+      <img src="./anh/bia.jpg" alt="Banner Phụ kiện" />
+      <div class="banner-text">
+        <h2>PHỤ KIỆN CHẤT LƯỢNG</h2>
+        <p>Phụ kiện đa dạng, giá cạnh tranh</p>
+      </div>
+    </section> -->
+
+    <!-- Danh mục hãng -->
+          <div class="brand-menu">
+  <span>Hãng:</span>
+  <a href="#" class="brand-filter active" data-brand="all">Tất cả</a>
+  <a href="#" class="brand-filter" data-brand="Iphone">Iphone</a>
+  <a href="#" class="brand-filter" data-brand="Samsung">Samsung</a>
+  <a href="#" class="brand-filter" data-brand="Xiaomi">Xiaomi</a>
+  <a href="#" class="brand-filter" data-brand="Oppo">Oppo</a>
+  <a href="#" class="brand-filter" data-brand="Realme">Realme</a>
+  <a href="#" class="brand-filter" data-brand="POCO">POCO</a>
+  <a href="#" class="brand-filter" data-brand="Nokia">Nokia</a>
+  <a href="#" class="brand-filter" data-brand="Vivo">Vivo</a>
+  <a href="#" class="brand-filter" data-brand="OnePlus">OnePlus</a>
+  <a href="#" class="brand-filter" data-brand="Xemthem">Xem thêm</a>
+  
+</div>
+
+    <!-- Sản phẩm Phụ kiện -->
+    <section class="products">
+      <!-- Phụ kiện đa dạng -->
+<div class="product" data-name="Tai nghe Bluetooth Samsung Buds2 Pro" data-price="3200000">
+  <img src="./anh/buds2pro.jpg" alt="Tai nghe Samsung Buds2 Pro" />
+  <h3>Tai nghe <br>Bluetooth Samsung Buds2 Pro</h3>
+  <p>Giá: <strong>3.200.000đ</strong></p>
+  <button class="order-btn">Mua</button><p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Ốp lưng MagSafe iPhone 14" data-price="490000">
+  <img src="./anh/opmagsafe.jpg" alt="Ốp lưng MagSafe iPhone 14" />
+  <h3>Ốp lưng
+  <br> MagSafe iPhone 14</h3>
+  <p>Giá: <strong>490.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Sạc nhanh Apple 20W USB-C" data-price="550000">
+  <img src="./anh/sacapple20w.jpg" alt="Sạc nhanh Apple 20W" />
+  <h3>Sạc nhanh</h3>
+   <h3> Apple 20W USB-C</h3>
+  <p>Giá: <strong>550.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Cáp Type-C Anker Powerline+ II 1m" data-price="390000">
+  <img src="./anh/capan1m.jpg" alt="Cáp Anker Powerline+ II 1m" />
+  <h3>Cáp Type-C Anker Powerline+ II 1m</h3>
+  <p>Giá: <strong>390.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Pin dự phòng Xiaomi 10000mAh Gen 3" data-price="590000">
+  <img src="./anh/xiaomi-powerbank.jpg" alt="Pin dự phòng Xiaomi 10000mAh" />
+  <h3>Pin dự phòng Xiaomi 10000mAh Gen 3</h3>
+  <p>Giá: <strong>590.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Kính cường lực Samsung S23 Ultra" data-price="250000">
+  <img src="./anh/cuongluc-s23.jpg" alt="Kính cường lực Samsung S23 Ultra" />
+  <h3>Kính cường lực Samsung S23 Ultra</h3>
+  <p>Giá: <strong>250.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+ <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Giá đỡ điện thoại để bàn" data-price="180000">
+  <img src="./anh/giadodienthoai.jpg" alt="Giá đỡ điện thoại để bàn" />
+  <h3>Giá đỡ điện thoại để bàn</h3>
+  <p>Giá: <strong>180.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+ <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Đồng hồ thông minh Amazfit Bip U" data-price="1290000">
+  <img src="./anh/amazfit.jpg" alt="Đồng hồ Amazfit Bip U" />
+  <h3>Đồng hồ thông minh Amazfit Bip U</h3>
+  <p>Giá: <strong>1.290.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+<p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Quạt tản nhiệt điện thoại MEMO DL05" data-price="350000">
+  <img src="./anh/quatmemo.jpg" alt="Quạt tản nhiệt điện thoại" />
+  <h3>Quạt tản nhiệt MEMO DL05</h3>
+  <p>Giá: <strong>350.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Chuột không dây Logitech M331 Silent" data-price="490000">
+  <img src="./anh/logitech-m331.jpg" alt="Chuột không dây Logitech M331" />
+  <h3>Chuột không dây Logitech M331</h3>
+  <p>Giá: <strong>490.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Loa Bluetooth JBL Go 3" data-price="890000">
+  <img src="./anh/jblgo3.jpg" alt="Loa Bluetooth JBL Go 3" />
+  <h3>Loa Bluetooth JBL Go 3</h3>
+  <p>Giá: <strong>890.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+ <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Balo Laptop Lenovo B210" data-price="590000">
+  <img src="./anh/balo-lenovo.jpg" alt="Balo Laptop Lenovo B210" />
+  <h3>Balo Laptop Lenovo B210</h3>
+  <p>Giá: <strong>590.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Miếng lót chuột RGB gaming" data-price="320000">
+  <img src="./anh/lotchuotrgb.jpg" alt="Miếng lót chuột RGB" />
+  <h3>Miếng lót chuột RGB gaming</h3>
+  <p>Giá: <strong>320.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+ <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="Webcam Logitech C270 HD" data-price="750000">
+  <img src="./anh/webcam-c270.jpg" alt="Webcam Logitech C270" />
+  <h3>Webcam Logitech C270 HD</h3>
+  <p>Giá: <strong>750.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+ <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+<div class="product" data-name="USB Sandisk 64GB 3.1" data-price="250000">
+  <img src="./anh/usb64gb.jpg" alt="USB Sandisk 64GB" />
+  <h3>USB Sandisk 64GB 3.1</h3>
+  <p>Giá: <strong>250.000đ</strong></p>
+  <button class="order-btn">Mua</button>
+  <p class="promotion">
+            Tặng: <span class="highlight">Miễn phí BHV</span> lần thứ 5, khi đã mua BHV lần thứ 4.<br />
+            (<span class="gray-text">Quý khách</span> <a href="#" class="login-link">Đăng nhập</a> để kiểm tra đơn hàng)
+          </p>
+</div>
+
+
+  
+    </section>
+
+    <!-- Giỏ hàng -->
+     <button id="open-cart-btn" aria-label="Mở giỏ hàng" title="Giỏ hàng">
+        <i class="fas fa-shopping-cart"></i> Giỏ hàng
+      </button>
+      <div id="cart" style="display:none">
+        <h3>Giỏ hàng của bạn</h3>
+        <ul id="cartItems"></ul>
+        <p>Tổng: <span id="totalPrice">0đ</span></p>
+        <button id="checkoutBtn" disabled>Thanh toán</button>
+        <button id="close-cart-btn">&times;</button>
+      </div>
+          <footer>
+
+        <!-- Footer chi tiết -->
+<div class="footer-container">
+  <div class="store-system">
+    <h3><i class="fas fa-map-marker-alt"></i> HỆ THỐNG CỬA HÀNG</h3>
+      10- Tản Đà- Thành Phố Huế| <a href="https://maps.app.goo.gl/ypAMXMR9gDGXKV16A">Xem bản đồ</a><br>
+      Điện thoại: 0969.120.120 - 037.437.9999<br>
+    </p>
+    <p><strong>Hotline CSKH:</strong> <span style="color:#000; font-weight:bold">097.120.66.88</span></p>
+  </div>
+
+  <div class="newsletter-social">
+    <h3><i class="fas fa-share-alt"></i> LIÊN KẾT</h3>
+    <ul class="social-links">
+      <li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/profile.php?id=61574088680585">Facebook</a></li>
+      <li><i class="fab fa-youtube"></i> Youtube</li>
+      <li><i class="fas fa-comments"></i> Zalo</li>
+      <li><i class="fab fa-instagram"></i> Instagram</li>
+      <li><i class="fab fa-tiktok"></i> Tiktok</li>
+      <li><i class="fab fa-twitter"></i> Twitter</li>
+    </ul>
+  </div>
+</div>
+
+<div class="payment-footer">
+  <p>Bạn có thể thanh toán với <img src="https://img.icons8.com/color/48/000000/visa.png" height="20" /> <img src="https://img.icons8.com/color/48/000000/mastercard.png" height="20" /></p>
+</div>
+        <p>&copy; 2025 Minh Nhật Store</p>
+      </footer>
+
+      <!-- Form popup đặt hàng -->
+      <div id="orderModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Đặt hàng ngay</h2>
+        <form
+          id="orderForm"
+          action="https://formspree.io/f/mwpqqreg"
+          method="POST"
+        >
+          <label for="name">Họ và tên:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="address">Địa chỉ:</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+
+          <label for="product">Sản phẩm muốn mua:</label>
+          <input type="text" id="product" name="product" readonly />
+
+          <button type="submit">Gửi đơn hàng</button>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+  <!-- Modal chi tiết sản phẩm -->
+<div id="productDetailModal" class="modal">
+  <div class="modal-content">
+    <span class="close-detail-btn">&times;</span>
+    <h2 id="detailProductName">Tên sản phẩm</h2>
+    <img id="detailProductImage" src="" alt="Ảnh sản phẩm" style="max-width: 300px;" />
+    <p id="detailProductPrice">Giá: ...</p>
+    <p id="detailProductDescription">Mô tả chi tiết sản phẩm ở đây...</p>
+  </div>
+</div>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quản lý đơn hàng - Minh Nhật Store</title>
+  <link rel="stylesheet" href="style.css" />
+   <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+</head>
+<body>
+   <!-- Thanh trên cùng -->
+      <div class="topbar">
+        <div class="logo">
+          <img
+            src="./anh/481780866_122093212556802956_3033451504716178783_n.jpg"
+            alt="Logo"
+          />
+          <span>MINH NHẬT STORE</span>
+        </div>
+
+        <div class="location">
+          <label for="city-select">Xem giá, tồn kho tại:</label>
+          <select id="city-select">
+            <option>Huế</option>
+            <option>Chưa cập nhật</option>
+          </select>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" placeholder="Tìm kiếm sản phẩm ..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="user-buttons">
+          <button class="login-btn"><i class="fas fa-user"></i> Đăng nhập</button>
+          <button class="register-btn">
+            <i class="fas fa-user-plus"></i> Đăng ký
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu điều hướng chính -->
+      <nav class="main-menu">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+          <li><a href="dienthoai.html"><i class="fas fa-mobile-alt"></i> Điện thoại</a></li>
+          <li><a href="phukien.html"><i class="fas fa-headphones-alt"></i> Phụ kiện</a></li>
+          <li><a href="suachua.html"><i class="fas fa-tools"></i> Sửa chữa</a></li>
+          <li><a href="tintuc.html"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+           <li><a href="admin.html"><i class="fas fa-newspaper"></i> Quản lí đơn hàng</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner -->
+      <section class="banner">
+        <img src="./anh/bia.jpg" alt="Banner quảng cáo" />
+        <div class="banner-text">
+          <h2>ĐIỆN THOẠI THÔNG MINH</h2>
+          <p>Chất lượng cao nhất - Khuyến mãi số 1 - Giá rẻ nhất</p>
+        </div>
+      </section>
+
+  <div class="container">
+    <h1>🧾 Quản lý đơn hàng</h1>
+    <table id="orderTable">
+      <thead>
+        <tr>
+          <th>Tên</th>
+          <th>Sản phẩm</th>
+          <th>Số lượng</th>
+          <th>SĐT</th>
+          <th>Địa chỉ</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Đơn hàng sẽ được render ở đây -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
